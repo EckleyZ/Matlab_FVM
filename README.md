@@ -23,7 +23,7 @@ A similar mesh was created for the fluid flow solution using the built in functi
     <img src="https://github.com/EckleyZ/Matlab_FVM/blob/main/Images/DiamondWedge7.jpg" width="300">
 </p>
 
-A mesh with varying cell size could be created to reduce calculation time by only having high cell counts in the areas of interest. Below is a mesh displaying these qualities. The geometry is supposed to be the SR-71 Blackbird. The solution from this mesh will be shown later.
+A mesh with varying cell size could be created to reduce calculation time by only having high cell counts in the areas of interest. Below is a mesh displaying these qualities. The geometry is supposed to be the SR-71 Blackbird. The solution from this mesh is shown in validation.md.
 
 <p align="center">
     <img src="https://github.com/EckleyZ/Matlab_FVM/blob/main/Images/BlackbirdMesh.jpg" width="500">
@@ -45,19 +45,3 @@ The properties from each of the equations above were split into two matrices Fx 
 After the mesh had been created information was calcualted for each cell such as the area, neighboring cells, and the normals vectors of each side. Once this information was found the corresponding cells could be paired up with its neighboring cell for each side and the net flux in x and y could be found through each side of every cell. This process resulted in 4 first order differential equations for each cell that could be solved through time using ode45 or a similar numerical method. Each time step would use ode45 to solve for the conditions from t to t+dt. This initially doesn't make much sense because the entirety of the solution could be solved in one swoop by using ode45. This could also save on time if the solution becomes stable then ode45 will increase the time step to reduce computation time. However, when this project first started it was going to be applied to solid rocket motors to solve for the internal ballistics. Throughout the burn, the port of the motor is changing. This means that as the solution progresses through time the boundary of the mesh is changing. To prepare for this the code was set up to take small steps forward in time so that after each time step the mesh could be adjusted to account for the changing port.
 
 The validation file will show the results of the code and how those results were used to make sure the methods used were successful.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
