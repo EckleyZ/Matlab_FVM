@@ -19,7 +19,10 @@ Instead, I focused on applying FVM to solve fluid flows and left the changing me
 FVM was used first used to solve for water sloshing around in a box so I could get the hang of the process. Shortly after that was completed I began applying FVM to the inviscid compressible Navier-Stokes equations. Those equations are included below:
 
 <p align="center">
+    <img src="/Images/equations.png" alt="Equations" title="Inviscid compressible Navier-Stokes equations">
     <img width="750" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.stack.imgur.com%2FPzDnY.gif&f=1&nofb=1" alt="Port geomtries with thrust curves">
 </p>
 
 The properties from each of the equations above were split into two matrices Fx and Fy. These matrices contained the properties described in the equations for each of the cells. The Fx and Fy matrices were repeated 3 layers deep to more easily compare the conditions of the cell with the conditions of the neighboring cells.
+
+
