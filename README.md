@@ -26,7 +26,7 @@ A similar mesh was created for the fluid flow solution using the built in functi
 A mesh with varying cell size could be created to reduce calculation time by only having high cell counts in the areas of interest. Below is a mesh displaying these qualities. The geometry is supposed to be the SR-71 Blackbird. The solution from this mesh will be shown later.
 
 <p align="center">
-    <img src="https://github.com/EckleyZ/Matlab_FVM/blob/main/Images/Blackbirdmesh.jpg" width="500">
+    <img src="https://github.com/EckleyZ/Matlab_FVM/blob/main/Images/BlackbirdMesh.jpg" width="500">
 </p>
 
 FVM was used first used to solve for water sloshing around in a box so I could get the hang of the process. Shortly after that was completed I began applying FVM to the inviscid compressible Navier-Stokes equations. Those equations are included below:
@@ -39,7 +39,7 @@ The properties from each of the equations above were split into two matrices Fx 
 
 <p align="center">
     <img src="https://github.com/EckleyZ/Matlab_FVM/blob/main/Images/FluxMatrix.png" height="400">
-    <img src="https://github.com/EckleyZ/Matlab_FVM/blob/main/Images/FluxArrays.png" height="250">
+    <img src="https://github.com/EckleyZ/Matlab_FVM/blob/main/Images/FluxArrays.png" height="400">
 </p>
 
 
