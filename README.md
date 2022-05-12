@@ -22,9 +22,9 @@ FVM was used first used to solve for water sloshing around in a box so I could g
     <img src="https://github.com/EckleyZ/Matlab_FVM/blob/main/Images/Equations.png" width="600">
 </p>
 
-The properties from each of the equations above were split into two matrices Fx and Fy. These matrices contained the properties described in the equations for each of the cells. The Fx and Fy matrices were repeated 3 layers deep to more easily compare the conditions of the cell with the conditions of the neighboring cells.
+The properties from each of the equations above were split into two matrices Fx and Fy. These matrices contained the properties described in the equations for each of the cells. The Fx and Fy matrices were repeated 3 layers deep to more easily compare the conditions of the cell with the conditions of the neighboring cells. An example of the Fx matrix is shown below with some labels to indicate what each dimension includes.
 
 <p align="center">
-    <img src="https://github.com/EckleyZ/Matlab_FVM/blob/main/Images/FluxMatrix.png" height="200">
-    <img src="https://github.com/EckleyZ/Matlab_FVM/blob/main/Images/FluxArrays.png" height="200">
+    <img src="https://github.com/EckleyZ/Matlab_FVM/blob/main/Images/FluxMatrix.png" height="400">
+    <img src="https://github.com/EckleyZ/Matlab_FVM/blob/main/Images/FluxArrays.png" height="250">
 </p>
