@@ -1,5 +1,9 @@
 # Matlab FVM
  
+ <p align="center">
+    <img src="https://github.com/EckleyZ/Matlab_FVM/blob/main/Images/LunarCapsuleUpscaledDenoisedSharpened.png" width="1000">
+ </p>
+ 
 This project was an attempt to apply the finite volume method (FVM) in MATLAB to solve fluid flows. The majority of the work was completed over the summer of 2021 and is essentially finished. The initial goal was to use FVM to solve the internal ballistics of a Solid Rocket Booster (SRB), but I had some difficulty creating an adaptive mesh to change with the port geometry of the motor. 
 
 SRBs work by molding a solid propellant around a central cutout called the port. This port can havea large variety of shapes that greatly impact the thrust curve of the motor. By changing the internal geometry of the port a very unique thrust curve can be created to fit nearly any vehicle. An image of different port shapes and their respective trhust curves is included below:
