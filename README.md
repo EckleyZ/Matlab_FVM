@@ -16,6 +16,19 @@ Instead, I focused on applying FVM to solve fluid flows and left the changing me
     <img src="https://github.com/EckleyZ/Matlab_FVM/blob/main/Images/CroppedMeshTest.gif" width="600">
 </p>
 
+A similar mesh was created for the fluid flow solution using the built in functions from MATLAB's PDE toolbox. The meshes were fairly customizable and allowed for easy creation of new geomtry if you're willing to hard code it. The two meshes shown below are the lowest and highest resolution meshes I coded for. The mesh on the left is the lower resolution and due to the low resolution the top corner of the wedge geoemtry has been cut to a flat surface. On the right is the higher resolution mesh. This mesh was rarely used as the number of cells is immense.
+
+<p align="center">
+    <img src="https://github.com/EckleyZ/Matlab_FVM/blob/main/Images/DiamondWedge1.jpg" width="300">
+    <img src="https://github.com/EckleyZ/Matlab_FVM/blob/main/Images/DiamondWedge7.jpg" width="300">
+</p>
+
+A mesh with varying cell size could be created to reduce calculation time by only having high cell counts in the areas of interest. Below is a mesh displaying these qualities. The geometry is supposed to be the SR-71 Blackbird. The solution from this mesh will be shown later.
+
+<p align="center">
+    <img src="https://github.com/EckleyZ/Matlab_FVM/blob/main/Images/Blackbirdmesh.jpg" width="500">
+</p>
+
 FVM was used first used to solve for water sloshing around in a box so I could get the hang of the process. Shortly after that was completed I began applying FVM to the inviscid compressible Navier-Stokes equations. Those equations are included below:
 
 <p align="center">
@@ -28,3 +41,5 @@ The properties from each of the equations above were split into two matrices Fx 
     <img src="https://github.com/EckleyZ/Matlab_FVM/blob/main/Images/FluxMatrix.png" height="400">
     <img src="https://github.com/EckleyZ/Matlab_FVM/blob/main/Images/FluxArrays.png" height="250">
 </p>
+
+
